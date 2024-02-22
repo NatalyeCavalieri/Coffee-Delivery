@@ -1,0 +1,44 @@
+import TraditionalEspresso from '../../../assets/Type=Expresso.svg'
+import { Counter } from './Counter'
+import { ShoppingCartSimple } from "@phosphor-icons/react"
+
+export function Coffees(){
+  return (
+      <div className="flex flex-col items-center w-64 h-[20.5rem] bg-gray-100 rounded-tr-[36px] rounded-bl-[36px] rounded-br-md rounded-tl-md px-5 border-2 border-red-600">
+        <img
+          className="size-[7.5rem] mb-4 -mt-5"
+          src={TraditionalEspresso}
+          alt=""
+        />
+        <span className="text-amber-500 bg-amber-100 rounded-[100px] py-1 px-2 text-[10px] font-bold uppercase mb-5">
+          Tradicional
+        </span>
+        <h1 className="text-xl font-bold text-amber-950 font-serif mb-2">
+          Expresso Tradicional
+        </h1>
+        <p className="text-sm text-gray-600 text-center mb-8">
+          O tradicional café feito com água quente e grãos moídos
+        </p>
+        <footer className="flex justify-between">
+          <div className="flex items-center mr-6">
+            <p className="font-normal text-sm text-zinc-700 flex items-center">
+              R$
+              <strong className="font-extrabold font-serif text-2xl ml-1">
+                9,90
+              </strong>
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <Counter />
+            <button className="bg-violet-800 p-2 rounded-md">
+              <ShoppingCartSimple
+                className="text-white"
+                weight="fill"
+                size={22}
+              />
+            </button>
+          </div>
+        </footer>
+      </div>
+  )
+}

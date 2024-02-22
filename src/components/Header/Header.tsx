@@ -1,7 +1,6 @@
 import LogoCoffee from '../../assets/Logo.svg'
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { CartEmpty } from './Cart/CartEmpty'
-import { CartFull } from './Cart/CartFull'
 
 
 export function Header(){
@@ -16,7 +15,6 @@ export function Header(){
               <p className="text-violet-900 text-sm">Porto Alegre, RS</p>
             </div>
             <CartEmpty/>
-            <CartFull/>
           </div>
         </div>
       </div>
