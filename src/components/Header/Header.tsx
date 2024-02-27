@@ -4,7 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa"
 import { NavLink } from 'react-router-dom'
 
 interface HeaderProps{
-  children: ReactNode
+  children?: ReactNode
 }
 
 

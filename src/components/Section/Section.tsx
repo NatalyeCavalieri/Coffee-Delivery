@@ -16,7 +16,7 @@ export function Section(){
         <Details/>
       </div>
       <div>
-        {/* DIV IMAGEM */}
+
         <img
           className="h-[360px] max-w-[360px] "
           src={CoffeeImage}

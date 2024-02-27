@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import { Counter } from './Counter'
+import { ShoppingCartSimple } from '@phosphor-icons/react'
 
 interface CoffeesProps{
   image: string
@@ -28,7 +29,15 @@ export function Coffees({image, title, children, content}:CoffeesProps){
           </p>
         </div>
         <div className="flex gap-2">
-          <Counter />
+          <Counter>
+            <button className="bg-violet-800 p-2 rounded-md hover:bg-violet-600">
+              <ShoppingCartSimple
+                className="text-white"
+                weight="fill"
+                size={22}
+              />
+            </button>
+          </Counter>
         </div>
       </footer>
     </div>

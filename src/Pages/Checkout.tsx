@@ -2,9 +2,9 @@ import { Header } from "../components/Header/Header"
 import { CartFull } from "../components/Header/Cart/CartFull"
 import { PiMapPinLineLight, PiCurrencyDollar, PiCreditCard, PiBankLight, PiMoneyLight } from "react-icons/pi"
 import { Payment } from "../components/Payment"
-
-
-
+import { CoffeeCard } from "../components/CoffeeSelected/CoffeeCard"
+import { COFFEES } from "../components/coffeesImages"
+import { ItemsTotal } from "../components/CoffeeSelected/ItemsTotal"
 
 
 export function Checkout() {
@@ -19,7 +19,7 @@ export function Checkout() {
           <h1 className="font-serif font-bold text-lg text-amber-950 mb-4">
             Complete seu pedido
           </h1>
-          <div className="bg-zinc-100 p-10 mb-3">
+          <div className="bg-zinc-100 p-10 mb-3 rounded-md">
             <div className="flex items-start gap-2 mb-8">
               <PiMapPinLineLight size={22} className="text-amber-600" />
               <div>
@@ -83,7 +83,7 @@ export function Checkout() {
             </form>
           </div>
 
-          <div className="bg-zinc-100 p-10 flex items-start gap-8 mb-8 flex-col">
+          <div className="bg-zinc-100 p-10 flex items-start gap-8 mb-8 flex-col rounded-md">
             <div className="flex">
               <PiCurrencyDollar size={22} className="text-violet-700" />
               <div className="">
@@ -114,10 +114,20 @@ export function Checkout() {
         </div>
 
         <div className="max-w-2xl">
-          <h1 className="mb-5">Cafés selecionados</h1>
-          <div className="bg-violet-500 p-10">
-            <div>
-              {/* conteudo div right -> fazer components coffees */}
+          <h1 className="mb-5 font-serif font-bold text-lg text-amber-950">
+            Cafés selecionados
+          </h1>
+          <div className="bg-zinc-100 p-8 rounded-tr-[44px] rounded-bl-[44px] rounded-tl-[6px] rounded-br-[6px]">
+            <div className="flex flex-col gap-6">
+              <CoffeeCard image={COFFEES.AMERICAN_ESPRESSO} />
+              <CoffeeCard image={COFFEES.AMERICAN_ESPRESSO} />
+              <ItemsTotal />
+                <button
+                  className="bg-amber-500 py-3 px-2 rounded-md text-white font-bold text-sm uppercase hover:brightness-90 duration-500"
+                  type="button"
+                >
+                  confirmar pedido
+                </button>
             </div>
           </div>
         </div>
