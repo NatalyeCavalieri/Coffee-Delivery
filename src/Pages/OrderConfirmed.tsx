@@ -1,11 +1,11 @@
-import { CartEmpty } from "../components/Header/Cart/CartEmpty";
-import { Header } from "../components/Header/Header";
+import { CartEmpty } from "../components/Header/Cart/CartEmpty"
+import { Header } from "../components/Header/Header"
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { MdTimer } from "react-icons/md"
 import { PiCurrencyDollar } from "react-icons/pi"
-import OrderImage from '../assets/Illustration.svg'
+import OrderImage from "../assets/Illustration.svg"
 
-export function OrderConfirmed(){
+export function OrderConfirmed() {
   return (
     <div>
       <Header>
@@ -20,7 +20,7 @@ export function OrderConfirmed(){
             Agora é só aguardar que logo o café chegará até você
           </p>
 
-          <div className="p-10 border-amber-200 border-2 rounded-tr-[36px] rounded-bl-[36px] rounded-tl-md rounded-br-md flex flex-col gap-8">
+          <div className="bg-white p-10 rounded-tr-[36px] rounded-bl-[36px] rounded-tl-md rounded-br-md flex flex-col gap-8 relative before:content-[''] before:absolute before:-inset-[1px] before:rounded-tr-[37px] before:rounded-bl-[37px] before:rounded-tl-[7px] before:rounded-br-[7px] before:bg-gradient-to-r before:from-[#DBAC2C] before:to-[#8047F8] before:-z-[1] ">
             <div className="flex gap-3 items-center">
               <div className="p-2 bg-violet-600 rounded-full flex items-center justify-center size-10">
                 <FaMapMarkerAlt className="text-white size-4" />
